@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/active_model_serializers/matchers/version', __FILE__)
+require File.expand_path('./lib/active_model_serializers/matchers/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["adman65"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ActiveModel::Serializers::Matchers::VERSION
 
-  gem.add_dependency "active_model_serializers", "~> 0.1.0"
+  gem.add_dependency "active_model_serializers", ">= 0.10.4"
   gem.add_dependency "rspec", "~> 2.0"
 
   gem.add_development_dependency "simplecov"
